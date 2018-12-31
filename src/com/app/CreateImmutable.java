@@ -17,9 +17,9 @@ final  class CreateImmutable {
 	}
 	public static void main(String[] args) {
 		
-		CreateImmutable c1= new CreateImmutable(100);
-		CreateImmutable c2= c1.modify(10);
-		CreateImmutable c3= c1.modify(100);
+		CreateImmutable c1= new CreateImmutable(10);
+		CreateImmutable c2= c1.modify(100);
+		CreateImmutable c3= c1.modify(10);
 		System.out.println(c1.equals(c3));
 	}
 }
